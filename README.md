@@ -30,3 +30,7 @@ Factory I/O original, and [`nautilus/README.md`](nautilus/README.md) for the con
 The working copies live where the tools expect them (OIP keeps its project open from its own
 folder). `./sync.sh` copies both into this repo; then review with `git status` and commit. Set
 `NAUT_SRC` / `OIP_SRC` to point it at other folders.
+
+## License
+
+MIT. See [LICENSE](LICENSE).
