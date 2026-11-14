@@ -45,6 +45,30 @@ the controller's 5 s counter reset in Manual.
 LOCAL, E-STOP 2, RESET 2, BELT, REJECT, and per sort lane a **PUSH** button with **HOME** and **OUT**
 lights. REJECT HOME / REJECT OUT show the reject pusher's limits.
 
+## Camera and navigation
+
+OIP has no saved camera views like Factory I/O's. It remembers one camera position per scene between
+sessions. These take their place:
+
+| What you want | How in OIP |
+|---|---|
+| Fixed views | **Numpad 1 / 3 / 7** for front, right and top; add **Ctrl** for rear, left and bottom. Without a numpad, click the axis balls on the orientation gizmo in the corner of the 3D view. **O** switches between perspective and orthographic. |
+| Jump to a part | Select it in the scene tree and press **F**. Press **F** again to follow it as it moves; a third time stops following. |
+| Back to the opening view | **Reset View** in the command palette (**Ctrl+Shift+P**, then type "reset view"). It isn't in the View menu. |
+| Fly around | Hold the **right mouse button**, or press **Shift+F**. Steer with **W A S D**, **Q / E** go down / up, and **Shift** goes faster. **Esc** stops flying. |
+| First person | **Pilot mode (P)**: walk with **W A S D**, and press **E** (or **F**, or click) to work buttons. **Esc** or **P** leaves it. |
+| Full-screen scene only | **Present** in the command palette, for a projector. **Esc** leaves it. |
+
+To get to either control panel, select **Remote panel** or **Local panel** in the scene tree and
+press **F**.
+
+### Operating panel devices
+
+Clicking a part in the editor only selects it. Select a button, selector or E-stop and press **C**, or
+press **E** on it in Pilot mode. The simulation must be **playing**; a press while it is stopped only
+changes the preview, and Nautilus never sees it. A momentary button gives a 0.3 s press; a latching
+button (RESET), a selector or an E-stop changes state on each press.
+
 ## Custom parts (`parts/user.*`)
 
 | Part | What it does |
