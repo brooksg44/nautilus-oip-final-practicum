@@ -1,0 +1,204 @@
+{
+  "id": "user.selector-switch",
+  "name": "Selector Switch",
+  "category": "Devices",
+  "geometry": {
+    "kind": "rig",
+    "bounds": {
+      "length": 0.06,
+      "width": 0.05,
+      "top": 0.075
+    },
+    "joints": [
+      {
+        "name": "turn",
+        "link": "knobRoot",
+        "type": "revolute",
+        "axis": [
+          0,
+          0,
+          1
+        ],
+        "min": -1,
+        "max": 1
+      }
+    ],
+    "links": [
+      {
+        "name": "body",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.06,
+            0.075,
+            0.025
+          ]
+        },
+        "offset": [
+          0,
+          0.0375,
+          0.0125
+        ],
+        "color": [
+          0.02,
+          0.02,
+          0.022
+        ]
+      },
+      {
+        "name": "collar",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.02,
+          "height": 0.008
+        },
+        "offset": [
+          0,
+          0.03,
+          0.029
+        ],
+        "rotation": [
+          1.5708,
+          0,
+          0
+        ],
+        "color": [
+          0.55,
+          0.55,
+          0.57
+        ],
+        "metalness": 0.8,
+        "roughness": 0.35,
+        "collision": "none"
+      },
+      {
+        "name": "knobRoot",
+        "shape": {
+          "kind": "frame"
+        },
+        "offset": [
+          0,
+          0.03,
+          0.033
+        ]
+      },
+      {
+        "name": "knobDisc",
+        "parent": "knobRoot",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.016,
+          "height": 0.006
+        },
+        "offset": [
+          0,
+          0,
+          0.003
+        ],
+        "rotation": [
+          1.5708,
+          0,
+          0
+        ],
+        "color": [
+          0.03,
+          0.03,
+          0.03
+        ],
+        "collision": "none"
+      },
+      {
+        "name": "knobBar",
+        "parent": "knobRoot",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.009,
+            0.034,
+            0.016
+          ]
+        },
+        "offset": [
+          0,
+          0,
+          0.012
+        ],
+        "color": [
+          0.06,
+          0.06,
+          0.06
+        ],
+        "collision": "none"
+      },
+      {
+        "name": "pointer",
+        "parent": "knobRoot",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.003,
+            0.012,
+            0.002
+          ]
+        },
+        "offset": [
+          0,
+          0.009,
+          0.0205
+        ],
+        "color": [
+          1,
+          1,
+          1
+        ],
+        "collision": "none"
+      },
+      {
+        "name": "leftLegend",
+        "shape": {
+          "kind": "label",
+          "textParam": "leftText",
+          "size": [
+            0.03,
+            0.011
+          ]
+        },
+        "offset": [
+          -0.016,
+          0.064,
+          0.0255
+        ],
+        "color": [
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "name": "rightLegend",
+        "shape": {
+          "kind": "label",
+          "textParam": "rightText",
+          "size": [
+            0.03,
+            0.011
+          ]
+        },
+        "offset": [
+          0.016,
+          0.064,
+          0.0255
+        ],
+        "color": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "sdk": {
+    "level": 15,
+    "of": "v2:2821:vfraib0lh2"
+  }
+}

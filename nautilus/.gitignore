@@ -1,0 +1,24 @@
+# Build output
+/bin/
+*.test
+*.out
+
+# Python (tools/)
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Node
+node_modules/
+
+# Editors / OS
+.DS_Store
+.idea/
+*.swp
+
+# Secrets
+.env
+
+# print output
+print/

@@ -1,0 +1,98 @@
+# Open Industry Project (OIP) Modbus map for Spring2026_Final_Practicum_Modbus.
+# OIP is the Modbus TCP server (desktop app, Simulation > PLC Controllers, default port 5020).
+# Discrete inputs 0-34 and coils 0-46 keep the Factory I/O numbering; see README.md for the differences.
+sources:
+  - { id: oip, host: 10.211.55.3, port: 5020, unitid: 1, wordorder: little, timeout: 200ms, retrymin: 100ms, retrymax: 1s }
+tags:
+  - { name: AtExit, source: oip, table: discrete, address: 0, format: bool }
+  - { name: AutoSS, source: oip, table: discrete, address: 1, format: bool }
+  - { name: RejectDiffuseSensor, source: oip, table: discrete, address: 2, format: bool }
+  - { name: DecSpdX10, source: oip, table: discrete, address: 3, format: bool }
+  - { name: DecSpdX100, source: oip, table: discrete, address: 4, format: bool }
+  - { name: EmergencyStop, source: oip, table: discrete, address: 5, format: bool }
+  - { name: EmergencyStop2, source: oip, table: discrete, address: 6, format: bool }
+  - { name: IncSpdX100, source: oip, table: discrete, address: 10, format: bool }
+  - { name: IncSpdX10, source: oip, table: discrete, address: 11, format: bool }
+  - { name: LocalControlPanel, source: oip, table: discrete, address: 12, format: bool }
+  - { name: ManualSS, source: oip, table: discrete, address: 13, format: bool }
+  - { name: RejPushBackLimit, source: oip, table: discrete, address: 14, format: bool }
+  - { name: RejPushFrontLimit, source: oip, table: discrete, address: 15, format: bool }
+  - { name: RemoteControlPanel, source: oip, table: discrete, address: 16, format: bool }
+  - { name: Reset, source: oip, table: discrete, address: 17, format: bool }
+  - { name: Start, source: oip, table: discrete, address: 18, format: bool }
+  - { name: Stop, source: oip, table: discrete, address: 19, format: bool }
+  - { name: ClassifyDefuseSensor, source: oip, table: discrete, address: 20, format: bool }
+  - { name: BaseSorterBeltTurnManPB, source: oip, table: discrete, address: 23, format: bool }
+  - { name: LidSorterBeltTurnManPB, source: oip, table: discrete, address: 26, format: bool }
+  - { name: RawSorterBeltTurnManPB, source: oip, table: discrete, address: 29, format: bool }
+  - { name: BeltConveyor4mManPB, source: oip, table: discrete, address: 30, format: bool }
+  - { name: RejectPusherManPB, source: oip, table: discrete, address: 31, format: bool }
+  - { name: SendSortPB, source: oip, table: discrete, address: 32, format: bool }
+  - { name: SendRejectPB, source: oip, table: discrete, address: 33, format: bool }
+  - { name: Reset2PB, source: oip, table: discrete, address: 34, format: bool }
+  - { name: VisionSensor1, source: oip, table: input, address: 0, format: int16 }
+  - { name: BaseLightInd, source: oip, table: coil, address: 0, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: DecSpdX10Light, source: oip, table: coil, address: 4, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: DecSpdX100Light, source: oip, table: coil, address: 5, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: Emitter, source: oip, table: coil, address: 6, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: IncSpdX1Light, source: oip, table: coil, address: 8, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: IncSpdX10Light, source: oip, table: coil, address: 9, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: LabPLCRunning, source: oip, table: coil, address: 10, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: LidLightInd, source: oip, table: coil, address: 11, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: LocalPanelActive, source: oip, table: coil, address: 15, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RawLightInd, source: oip, table: coil, address: 16, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RejectPusher, source: oip, table: coil, address: 20, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RemotePanelActive, source: oip, table: coil, address: 21, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: ControlOnPL, source: oip, table: coil, address: 25, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: SkidPLCRunning, source: oip, table: coil, address: 26, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: StartPL, source: oip, table: coil, address: 27, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: StopBlade, source: oip, table: coil, address: 28, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: StopPL, source: oip, table: coil, address: 29, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: AutoPL, source: oip, table: coil, address: 31, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RawSorterBeltTurnPL, source: oip, table: coil, address: 34, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: BaseSorterBeltTurnPL, source: oip, table: coil, address: 37, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: LidSorterBeltTurnPL, source: oip, table: coil, address: 40, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: ManualPL, source: oip, table: coil, address: 41, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: BeltConveyor4mPL, source: oip, table: coil, address: 42, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RejectPusherPL, source: oip, table: coil, address: 43, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: ControlOnPL2, source: oip, table: coil, address: 44, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  # new sort-position eyes in front of each diverter
+  - { name: LidSortEye, source: oip, table: discrete, address: 35, format: bool }
+  - { name: BaseSortEye, source: oip, table: discrete, address: 36, format: bool }
+  - { name: RawSortEye, source: oip, table: discrete, address: 37, format: bool }
+  # sort pusher limit switches ('Pusher with limits' parts)
+  - { name: LidPusherRetracted, source: oip, table: discrete, address: 38, format: bool }
+  - { name: LidPusherExtended, source: oip, table: discrete, address: 39, format: bool }
+  - { name: BasePusherRetracted, source: oip, table: discrete, address: 40, format: bool }
+  - { name: BasePusherExtended, source: oip, table: discrete, address: 41, format: bool }
+  - { name: RawPusherRetracted, source: oip, table: discrete, address: 42, format: bool }
+  - { name: RawPusherExtended, source: oip, table: discrete, address: 43, format: bool }
+  # despawner counts (boxes removed per lane)
+  - { name: LidRemoved, source: oip, table: input, address: 1, format: int16 }
+  - { name: BaseRemoved, source: oip, table: input, address: 2, format: int16 }
+  - { name: RawRemoved, source: oip, table: input, address: 3, format: int16 }
+  - { name: RejectRemoved, source: oip, table: input, address: 4, format: int16 }
+  # pop-up diverters that replace the pivot-arm sorters (on the old Turn coils)
+  - { name: BaseDiverter, source: oip, table: coil, address: 3, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: LidDiverter, source: oip, table: coil, address: 14, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RawDiverter, source: oip, table: coil, address: 17, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  # local panel pusher limit lamps (on the coils the old sorter CW/CCW lamps used)
+  - { name: RawHomePL, source: oip, table: coil, address: 32, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RawOutPL, source: oip, table: coil, address: 33, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: BaseHomePL, source: oip, table: coil, address: 35, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: BaseOutPL, source: oip, table: coil, address: 36, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: LidHomePL, source: oip, table: coil, address: 38, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: LidOutPL, source: oip, table: coil, address: 39, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RejectHomePL, source: oip, table: coil, address: 47, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RejectOutPL, source: oip, table: coil, address: 48, format: bool, writable: true, writeonly: true, rewrite: 100ms }
+  # panel digital displays (user.digital-display parts), Factory I/O holding numbers
+  - { name: BaseCounter, source: oip, table: holding, address: 0, format: int16, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: BeltSpeedRef, source: oip, table: holding, address: 2, format: int16, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: LidCounter, source: oip, table: holding, address: 3, format: int16, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: ProductionRate, source: oip, table: holding, address: 4, format: int16, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: RawCounter, source: oip, table: holding, address: 5, format: int16, writable: true, writeonly: true, rewrite: 100ms }
+  # 3-tier stack light: bit0 green Running, bit1 amber Warning, bit2 red E-stopped
+  - { name: StackLight, source: oip, table: holding, address: 10, format: int16, writable: true, writeonly: true, rewrite: 100ms }
+  # belt speeds in m/s, OIP REAL %QD50 / %QD51 (float32, low word first)
+  - { name: Belt1SpeedMps, source: oip, table: holding, address: 100, format: float32, writable: true, writeonly: true, rewrite: 100ms }
+  - { name: Belt2SpeedMps, source: oip, table: holding, address: 102, format: float32, writable: true, writeonly: true, rewrite: 100ms }

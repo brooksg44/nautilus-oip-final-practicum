@@ -1,0 +1,22 @@
+{
+  "version": 7,
+  "name": "Spring2026 Final Practicum Modbus",
+  "packages": [
+    "parts/oip.box-spawner",
+    "parts/oip.belt-conveyor",
+    "parts/oip.diffuse-sensor",
+    "parts/oip.color-sensor",
+    "parts/oip.diverter",
+    "parts/oip.despawner",
+    "parts/oip.blade-stop",
+    "parts/oip.shape",
+    "parts/oip.stack-light",
+    "parts/oip.push-button",
+    "parts/oip.box",
+    "parts/user.pilot-light",
+    "parts/user.selector-switch",
+    "parts/user.digital-display",
+    "parts/user.pusher-limits"
+  ],
+  "scene": "scene.json"
+}

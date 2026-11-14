@@ -1,0 +1,1644 @@
+{
+  "version": 4,
+  "parts": [
+    {
+      "id": "pt_1",
+      "name": "Emitter (Emitter1)",
+      "type": "part",
+      "packageId": "oip.box-spawner",
+      "position": [
+        0,
+        1.4,
+        -4.3
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "boxesPerMinute": 30,
+        "fixedRate": true,
+        "product": "oip.box",
+        "productSettings": "",
+        "boxColor": "#ffffff",
+        "boxColors": "#1e3cff,#5aa0ff,#0a1e8c,#28c828,#96ff64,#0a6e1e,#a0a0a0,#dcdcdc,#5a5a5a",
+        "mixAttribute": "code",
+        "mixValues": "1,2,3,4,5,6,7,8,9",
+        "randomColors": true,
+        "length": 0.4,
+        "width": 0.4,
+        "height": 0.3,
+        "randomSize": false,
+        "mass": 5,
+        "disable": false,
+        "release": "enable",
+        "keepSpacing": false,
+        "conveyorId": "",
+        "runTag": "%QX0.6",
+        "countTag": ""
+      }
+    },
+    {
+      "id": "pt_2",
+      "name": "Belt Conveyor (4m) 1",
+      "type": "part",
+      "packageId": "oip.belt-conveyor",
+      "position": [
+        0,
+        0.9,
+        -4.75
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "shapePreset": "straight",
+        "segments": [
+          [
+            4,
+            0
+          ]
+        ],
+        "width": 1,
+        "height": 0.17,
+        "standHeight": 0.9,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 0.6,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "frameRails": true,
+        "leftGuard": true,
+        "rightGuard": true,
+        "guardOpenings": [
+          [
+            2.85,
+            3.75,
+            0
+          ]
+        ],
+        "guardHoles": [],
+        "guardMitres": [],
+        "railCuts": [],
+        "guardExtents": [],
+        "legs": true,
+        "legRests": [],
+        "tailLeg": true,
+        "tailLegOffset": 0.15,
+        "tailLegClearance": 1,
+        "headLeg": true,
+        "headLegOffset": 0.15,
+        "headLegClearance": 1,
+        "middleLegs": true,
+        "legSpacing": 3.05,
+        "exclusionStart": 0,
+        "exclusionEnd": 0,
+        "speedTag": "%QD50",
+        "speedFpmTag": "",
+        "runTag": "",
+        "runningTag": "",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_3",
+      "name": "Belt Conveyor (4m) 2",
+      "type": "part",
+      "packageId": "oip.belt-conveyor",
+      "position": [
+        0,
+        0.9,
+        -0.45
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "shapePreset": "straight",
+        "segments": [
+          [
+            4,
+            0
+          ]
+        ],
+        "width": 1,
+        "height": 0.17,
+        "standHeight": 0.9,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 0.6,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "frameRails": true,
+        "leftGuard": true,
+        "rightGuard": true,
+        "guardOpenings": [
+          [
+            0,
+            0.9,
+            0
+          ],
+          [
+            1.25,
+            2.15,
+            0
+          ],
+          [
+            2.625,
+            3.525,
+            0
+          ]
+        ],
+        "guardHoles": [],
+        "guardMitres": [],
+        "railCuts": [],
+        "guardExtents": [],
+        "legs": true,
+        "legRests": [],
+        "tailLeg": true,
+        "tailLegOffset": 0.15,
+        "tailLegClearance": 1,
+        "headLeg": true,
+        "headLegOffset": 0.15,
+        "headLegClearance": 1,
+        "middleLegs": true,
+        "legSpacing": 3.05,
+        "exclusionStart": 0,
+        "exclusionEnd": 0,
+        "speedTag": "%QD51",
+        "speedFpmTag": "",
+        "runTag": "",
+        "runningTag": "",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_4",
+      "name": "ClassifyDiffuseSensor",
+      "type": "part",
+      "packageId": "oip.diffuse-sensor",
+      "position": [
+        0.55,
+        0.92,
+        -2.625
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "maxRange": 1.1,
+        "mode": "diffuse",
+        "showBeam": true,
+        "normallyClosed": false,
+        "mark": "",
+        "tag": "%IX2.4"
+      }
+    },
+    {
+      "id": "pt_5",
+      "name": "VisionSensor1 (color code 1..9)",
+      "type": "part",
+      "packageId": "oip.color-sensor",
+      "position": [
+        -0.55,
+        0.92,
+        -2.3
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "maxRange": 1.1,
+        "showBeam": true,
+        "colors": "#1e3cff,#5aa0ff,#0a1e8c,#28c828,#96ff64,#0a6e1e,#a0a0a0,#dcdcdc,#5a5a5a",
+        "tolerance": 25,
+        "colorTag": "%IW0"
+      }
+    },
+    {
+      "id": "pt_6",
+      "name": "RejectDiffuseSensor",
+      "type": "part",
+      "packageId": "oip.diffuse-sensor",
+      "position": [
+        -0.55,
+        0.92,
+        -1.3
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "maxRange": 1.1,
+        "mode": "diffuse",
+        "showBeam": true,
+        "normallyClosed": false,
+        "mark": "",
+        "tag": "%IX0.2"
+      }
+    },
+    {
+      "id": "pt_8",
+      "name": "Reject chute",
+      "type": "part",
+      "packageId": "oip.belt-conveyor",
+      "position": [
+        -0.68,
+        0.8,
+        -1.45
+      ],
+      "rotationY": 3.1416,
+      "params": {
+        "shapePreset": "straight",
+        "segments": [
+          [
+            2.2,
+            0
+          ]
+        ],
+        "width": 0.8,
+        "height": 0.17,
+        "standHeight": 0.8,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 1,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "frameRails": true,
+        "leftGuard": true,
+        "rightGuard": true,
+        "guardOpenings": [],
+        "guardHoles": [],
+        "guardMitres": [],
+        "railCuts": [],
+        "guardExtents": [],
+        "legs": true,
+        "legRests": [],
+        "tailLeg": true,
+        "tailLegOffset": 0.15,
+        "tailLegClearance": 1,
+        "headLeg": true,
+        "headLegOffset": 0.15,
+        "headLegClearance": 1,
+        "middleLegs": true,
+        "legSpacing": 3.05,
+        "exclusionStart": 0,
+        "exclusionEnd": 0,
+        "speedTag": "",
+        "speedFpmTag": "",
+        "runTag": "",
+        "runningTag": "",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_9",
+      "name": "Remover4 (reject)",
+      "type": "part",
+      "packageId": "oip.despawner",
+      "position": [
+        -3.2,
+        0.3,
+        -1.45
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 0.6,
+        "width": 1,
+        "height": 1,
+        "countOnly": "",
+        "showReadout": true,
+        "countTag": "%IW4",
+        "rateTag": "",
+        "cycleTag": "",
+        "blockTag": ""
+      }
+    },
+    {
+      "id": "pt_10",
+      "name": "AtExit (retro-reflective)",
+      "type": "part",
+      "packageId": "oip.diffuse-sensor",
+      "position": [
+        0.6,
+        0.92,
+        -1.125
+      ],
+      "rotationY": 0,
+      "params": {
+        "maxRange": 4.4,
+        "mode": "retro",
+        "showBeam": true,
+        "normallyClosed": true,
+        "mark": "",
+        "tag": "%IX0.0"
+      }
+    },
+    {
+      "id": "pt_11",
+      "name": "StopBlade",
+      "type": "part",
+      "packageId": "oip.blade-stop",
+      "position": [
+        0,
+        0.9,
+        -0.6
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "width": 1,
+        "active": false,
+        "raiseHeight": 0.04,
+        "airPressureHeight": 0.07,
+        "tag": "%QX3.4"
+      }
+    },
+    {
+      "id": "pt_13",
+      "name": "LidSortPositionEye (new)",
+      "type": "part",
+      "packageId": "oip.diffuse-sensor",
+      "position": [
+        0.55,
+        0.92,
+        -0.1
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "maxRange": 1.1,
+        "mode": "diffuse",
+        "showBeam": true,
+        "normallyClosed": false,
+        "mark": "",
+        "tag": "%IX4.3"
+      }
+    },
+    {
+      "id": "pt_14",
+      "name": "Belt Conveyor (2m) Lid",
+      "type": "part",
+      "packageId": "oip.belt-conveyor",
+      "position": [
+        0.68,
+        0.9,
+        0
+      ],
+      "rotationY": 0,
+      "params": {
+        "shapePreset": "straight",
+        "segments": [
+          [
+            2,
+            0
+          ]
+        ],
+        "width": 1,
+        "height": 0.17,
+        "standHeight": 0.9,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 1,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "frameRails": true,
+        "leftGuard": true,
+        "rightGuard": true,
+        "guardOpenings": [],
+        "guardHoles": [],
+        "guardMitres": [],
+        "railCuts": [],
+        "guardExtents": [],
+        "legs": true,
+        "legRests": [],
+        "tailLeg": true,
+        "tailLegOffset": 0.15,
+        "tailLegClearance": 1,
+        "headLeg": true,
+        "headLegOffset": 0.15,
+        "headLegClearance": 1,
+        "middleLegs": true,
+        "legSpacing": 3.05,
+        "exclusionStart": 0,
+        "exclusionEnd": 0,
+        "speedTag": "",
+        "speedFpmTag": "",
+        "runTag": "",
+        "runningTag": "",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_15",
+      "name": "Remover1 (Lid)",
+      "type": "part",
+      "packageId": "oip.despawner",
+      "position": [
+        3,
+        0.3,
+        0
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 0.6,
+        "width": 1.1,
+        "height": 1,
+        "countOnly": "",
+        "showReadout": true,
+        "countTag": "%IW1",
+        "rateTag": "",
+        "cycleTag": "",
+        "blockTag": ""
+      }
+    },
+    {
+      "id": "pt_17",
+      "name": "BaseSortPositionEye (new)",
+      "type": "part",
+      "packageId": "oip.diffuse-sensor",
+      "position": [
+        0.55,
+        0.92,
+        1.15
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "maxRange": 1.1,
+        "mode": "diffuse",
+        "showBeam": true,
+        "normallyClosed": false,
+        "mark": "",
+        "tag": "%IX4.4"
+      }
+    },
+    {
+      "id": "pt_18",
+      "name": "Belt Conveyor (2m) Base",
+      "type": "part",
+      "packageId": "oip.belt-conveyor",
+      "position": [
+        0.68,
+        0.9,
+        1.25
+      ],
+      "rotationY": 0,
+      "params": {
+        "shapePreset": "straight",
+        "segments": [
+          [
+            2,
+            0
+          ]
+        ],
+        "width": 1,
+        "height": 0.17,
+        "standHeight": 0.9,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 1,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "frameRails": true,
+        "leftGuard": true,
+        "rightGuard": true,
+        "guardOpenings": [],
+        "guardHoles": [],
+        "guardMitres": [],
+        "railCuts": [],
+        "guardExtents": [],
+        "legs": true,
+        "legRests": [],
+        "tailLeg": true,
+        "tailLegOffset": 0.15,
+        "tailLegClearance": 1,
+        "headLeg": true,
+        "headLegOffset": 0.15,
+        "headLegClearance": 1,
+        "middleLegs": true,
+        "legSpacing": 3.05,
+        "exclusionStart": 0,
+        "exclusionEnd": 0,
+        "speedTag": "",
+        "speedFpmTag": "",
+        "runTag": "",
+        "runningTag": "",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_19",
+      "name": "Remover2 (Base)",
+      "type": "part",
+      "packageId": "oip.despawner",
+      "position": [
+        3,
+        0.3,
+        1.25
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 0.6,
+        "width": 1.1,
+        "height": 1,
+        "countOnly": "",
+        "showReadout": true,
+        "countTag": "%IW2",
+        "rateTag": "",
+        "cycleTag": "",
+        "blockTag": ""
+      }
+    },
+    {
+      "id": "pt_21",
+      "name": "RawSortPositionEye (new)",
+      "type": "part",
+      "packageId": "oip.diffuse-sensor",
+      "position": [
+        0.55,
+        0.92,
+        2.525
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "maxRange": 1.1,
+        "mode": "diffuse",
+        "showBeam": true,
+        "normallyClosed": false,
+        "mark": "",
+        "tag": "%IX4.5"
+      }
+    },
+    {
+      "id": "pt_22",
+      "name": "Belt Conveyor (2m) Raw",
+      "type": "part",
+      "packageId": "oip.belt-conveyor",
+      "position": [
+        0.68,
+        0.9,
+        2.625
+      ],
+      "rotationY": 0,
+      "params": {
+        "shapePreset": "straight",
+        "segments": [
+          [
+            2,
+            0
+          ]
+        ],
+        "width": 1,
+        "height": 0.17,
+        "standHeight": 0.9,
+        "fpmUnits": false,
+        "speedFpm": 394,
+        "speed": 1,
+        "accelTime": 0.5,
+        "decelTime": 0.5,
+        "friction": 0.59,
+        "beltColor": "#ffffff",
+        "beltTexture": "standard",
+        "frameRails": true,
+        "leftGuard": true,
+        "rightGuard": true,
+        "guardOpenings": [],
+        "guardHoles": [],
+        "guardMitres": [],
+        "railCuts": [],
+        "guardExtents": [],
+        "legs": true,
+        "legRests": [],
+        "tailLeg": true,
+        "tailLegOffset": 0.15,
+        "tailLegClearance": 1,
+        "headLeg": true,
+        "headLegOffset": 0.15,
+        "headLegClearance": 1,
+        "middleLegs": true,
+        "legSpacing": 3.05,
+        "exclusionStart": 0,
+        "exclusionEnd": 0,
+        "speedTag": "",
+        "speedFpmTag": "",
+        "runTag": "",
+        "runningTag": "",
+        "speedAt30": 2,
+        "speedAt30Fpm": 394,
+        "velocityTag": "",
+        "inchesPerPulse": 1,
+        "pulseTag": "",
+        "encoderTag": ""
+      }
+    },
+    {
+      "id": "pt_23",
+      "name": "Remover3 (Raw)",
+      "type": "part",
+      "packageId": "oip.despawner",
+      "position": [
+        3,
+        0.3,
+        2.625
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 0.6,
+        "width": 1.1,
+        "height": 1,
+        "countOnly": "",
+        "showReadout": true,
+        "countTag": "%IW3",
+        "rateTag": "",
+        "cycleTag": "",
+        "blockTag": ""
+      }
+    },
+    {
+      "id": "pt_24",
+      "name": "End-of-line catch (new)",
+      "type": "part",
+      "packageId": "oip.despawner",
+      "position": [
+        0,
+        0.3,
+        3.95
+      ],
+      "rotationY": 0,
+      "params": {
+        "length": 1.2,
+        "width": 0.6,
+        "height": 1,
+        "countOnly": "",
+        "showReadout": true,
+        "countTag": "",
+        "rateTag": "",
+        "cycleTag": "",
+        "blockTag": ""
+      }
+    },
+    {
+      "id": "pt_25",
+      "name": "Remote panel",
+      "type": "part",
+      "packageId": "oip.shape",
+      "position": [
+        1.02,
+        0,
+        -3.25
+      ],
+      "rotationY": 0,
+      "params": {
+        "shape": "box",
+        "length": 0.15,
+        "width": 0.7,
+        "height": 1.85,
+        "sides": 20,
+        "color": "#5b6770",
+        "solid": true
+      }
+    },
+    {
+      "id": "pt_26",
+      "name": "VisualStatusIndicator (stack light)",
+      "type": "part",
+      "packageId": "oip.stack-light",
+      "position": [
+        1.02,
+        1.85,
+        -3.125
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "segments": 3,
+        "value": 0,
+        "tag": "%QW10"
+      }
+    },
+    {
+      "id": "pt_27",
+      "name": "E-STOP (EmergencyStop)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.205,
+        -3.5
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": true,
+        "text": "E-STOP",
+        "buttonColor": "#b3140f",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "press",
+        "tag": "%IX0.5",
+        "lampTag": ""
+      }
+    },
+    {
+      "id": "pt_28",
+      "name": "START (Start)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.58,
+        -3.125
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "START",
+        "buttonColor": "#22aa33",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX2.2",
+        "lampTag": "%QX3.3"
+      }
+    },
+    {
+      "id": "pt_29",
+      "name": "STOP (Stop)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.58,
+        -3.25
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "STOP",
+        "buttonColor": "#cc2222",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": true,
+        "lampSource": "tag",
+        "tag": "%IX2.3",
+        "lampTag": "%QX3.5"
+      }
+    },
+    {
+      "id": "pt_30",
+      "name": "RESET (Reset)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.58,
+        -3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "RESET",
+        "buttonColor": "#2255cc",
+        "momentary": false,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX2.1",
+        "lampTag": "%QX3.1"
+      }
+    },
+    {
+      "id": "pt_35",
+      "name": "+100 (IncSpdx100)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.33,
+        -3
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "+100",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX1.2",
+        "lampTag": "%QX1.0"
+      }
+    },
+    {
+      "id": "pt_36",
+      "name": "+10 (IncSpdx10)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.205,
+        -3
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "+10",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX1.3",
+        "lampTag": "%QX1.1"
+      }
+    },
+    {
+      "id": "pt_37",
+      "name": "-100 (DecSpdx100)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.08,
+        -3
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "-100",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX0.4",
+        "lampTag": "%QX0.5"
+      }
+    },
+    {
+      "id": "pt_38",
+      "name": "-10 (DecSpdx10)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.08,
+        -3.125
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "-10",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX0.3",
+        "lampTag": "%QX0.4"
+      }
+    },
+    {
+      "id": "pt_39",
+      "name": "REMOTE (RemoteControlPanel)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        1.125,
+        1.705,
+        -3.25
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "REMOTE",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX2.0",
+        "lampTag": "%QX2.5"
+      }
+    },
+    {
+      "id": "pt_47",
+      "name": "Local panel",
+      "type": "part",
+      "packageId": "oip.shape",
+      "position": [
+        2.52,
+        0,
+        3.575
+      ],
+      "rotationY": 0,
+      "params": {
+        "shape": "box",
+        "length": 0.15,
+        "width": 0.75,
+        "height": 1.85,
+        "sides": 20,
+        "color": "#5b6770",
+        "solid": true
+      }
+    },
+    {
+      "id": "pt_48",
+      "name": "E-STOP 2 (EmergencyStop2)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        2.625,
+        1.205,
+        3.5
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": true,
+        "text": "E-STOP 2",
+        "buttonColor": "#b3140f",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "press",
+        "tag": "%IX0.6",
+        "lampTag": ""
+      }
+    },
+    {
+      "id": "pt_49",
+      "name": "LOCAL (LocalControlPanel)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        2.625,
+        1.705,
+        3.625
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "LOCAL",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX1.4",
+        "lampTag": "%QX1.7"
+      }
+    },
+    {
+      "id": "pt_50",
+      "name": "RESET 2 (Reset2)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        2.625,
+        1.205,
+        3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "RESET 2",
+        "buttonColor": "#2255cc",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX4.2",
+        "lampTag": "%QX5.4"
+      }
+    },
+    {
+      "id": "pt_53",
+      "name": "BASE PUSH (BaseSorterTurnManPB)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        2.625,
+        1.58,
+        3.5
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "BASE PUSH",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX2.7",
+        "lampTag": "%QX4.5"
+      }
+    },
+    {
+      "id": "pt_56",
+      "name": "LID PUSH (LidSorterTurnManPB)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        2.625,
+        1.455,
+        3.5
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "LID PUSH",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX3.2",
+        "lampTag": "%QX5.0"
+      }
+    },
+    {
+      "id": "pt_59",
+      "name": "RAW PUSH (RawSorterTurnManPB)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        2.625,
+        1.33,
+        3.5
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "RAW PUSH",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX3.5",
+        "lampTag": "%QX4.2"
+      }
+    },
+    {
+      "id": "pt_60",
+      "name": "BELT (BeltConveyor(4m)ManPB)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        2.625,
+        1.33,
+        3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "BELT",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX3.6",
+        "lampTag": "%QX5.2"
+      }
+    },
+    {
+      "id": "pt_61",
+      "name": "REJECT (RejectPusherManPB)",
+      "type": "part",
+      "packageId": "oip.push-button",
+      "position": [
+        2.625,
+        1.455,
+        3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "emergencyStop": false,
+        "text": "REJECT",
+        "buttonColor": "#e8e8e8",
+        "momentary": true,
+        "startPressed": false,
+        "startStruck": false,
+        "normallyClosed": false,
+        "lampSource": "tag",
+        "tag": "%IX3.7",
+        "lampTag": "%QX5.3"
+      }
+    },
+    {
+      "id": "pt_62",
+      "name": "MAN/AUTO selector (Manual/Auto)",
+      "type": "part",
+      "packageId": "user.selector-switch",
+      "position": [
+        1.095,
+        1.205,
+        -3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "leftText": "MAN",
+        "rightText": "AUTO",
+        "right": true,
+        "leftTag": "%IX1.5",
+        "rightTag": "%IX0.1"
+      }
+    },
+    {
+      "id": "pt_63",
+      "name": "SORT/REJECT selector (SendSort/SendReject)",
+      "type": "part",
+      "packageId": "user.selector-switch",
+      "position": [
+        1.095,
+        1.08,
+        -3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "leftText": "SORT",
+        "rightText": "REJECT",
+        "right": false,
+        "leftTag": "%IX4.0",
+        "rightTag": "%IX4.1"
+      }
+    },
+    {
+      "id": "pt_64",
+      "name": "RAW (RawPLRed)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        1.095,
+        1.33,
+        -3.125
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "RAW",
+        "color": "red",
+        "tag": "%QX2.0"
+      }
+    },
+    {
+      "id": "pt_65",
+      "name": "BASE (BasePLYellow)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        1.095,
+        1.33,
+        -3.25
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "BASE",
+        "color": "yellow",
+        "tag": "%QX0.0"
+      }
+    },
+    {
+      "id": "pt_66",
+      "name": "LID (LidPLGreen)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        1.095,
+        1.33,
+        -3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "LID",
+        "color": "green",
+        "tag": "%QX1.3"
+      }
+    },
+    {
+      "id": "pt_67",
+      "name": "MANUAL (Manual PL)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        1.095,
+        1.205,
+        -3.25
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "MANUAL",
+        "color": "yellow",
+        "tag": "%QX5.1"
+      }
+    },
+    {
+      "id": "pt_68",
+      "name": "AUTO (AutoPL)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        1.095,
+        1.08,
+        -3.25
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "AUTO",
+        "color": "green",
+        "tag": "%QX3.7"
+      }
+    },
+    {
+      "id": "pt_69",
+      "name": "LAB PLC (LabPLCRunning)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        1.095,
+        1.705,
+        -3
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "LAB PLC",
+        "color": "green",
+        "tag": "%QX1.2"
+      }
+    },
+    {
+      "id": "pt_70",
+      "name": "SKID PLC (SkidPLCRunning)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        1.095,
+        1.705,
+        -3.5
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "SKID PLC",
+        "color": "green",
+        "tag": "%QX3.2"
+      }
+    },
+    {
+      "id": "pt_71",
+      "name": "RawCounter display",
+      "type": "part",
+      "packageId": "user.digital-display",
+      "position": [
+        1.095,
+        1.455,
+        -3.125
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "RAW",
+        "decimals": 0,
+        "tag": "%QW5"
+      }
+    },
+    {
+      "id": "pt_72",
+      "name": "BaseCounter display",
+      "type": "part",
+      "packageId": "user.digital-display",
+      "position": [
+        1.095,
+        1.455,
+        -3.25
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "BASE",
+        "decimals": 0,
+        "tag": "%QW0"
+      }
+    },
+    {
+      "id": "pt_73",
+      "name": "LidCounter display",
+      "type": "part",
+      "packageId": "user.digital-display",
+      "position": [
+        1.095,
+        1.455,
+        -3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "LID",
+        "decimals": 0,
+        "tag": "%QW3"
+      }
+    },
+    {
+      "id": "pt_74",
+      "name": "BeltSpeedRef display (cm/s)",
+      "type": "part",
+      "packageId": "user.digital-display",
+      "position": [
+        1.095,
+        1.205,
+        -3.125
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "SPEED cm/s",
+        "decimals": 0,
+        "tag": "%QW2"
+      }
+    },
+    {
+      "id": "pt_75",
+      "name": "ProductionRate display",
+      "type": "part",
+      "packageId": "user.digital-display",
+      "position": [
+        1.095,
+        1.58,
+        -3
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "RATE",
+        "decimals": 0,
+        "tag": "%QW4"
+      }
+    },
+    {
+      "id": "pt_76",
+      "name": "RejectPusher (with limits)",
+      "type": "part",
+      "packageId": "user.pusher-limits",
+      "position": [
+        1.614,
+        0.7,
+        -1.45
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "diverted": false,
+        "divertTime": 0.25,
+        "divertDistance": 1.5,
+        "standHeight": 0.7,
+        "tag": "%QX2.4",
+        "retractedTag": "%IX1.6",
+        "extendedTag": "%IX1.7"
+      }
+    },
+    {
+      "id": "pt_77",
+      "name": "LidSorterTurn (pusher with limits)",
+      "type": "part",
+      "packageId": "user.pusher-limits",
+      "position": [
+        -1.6135,
+        0.7,
+        0
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "diverted": false,
+        "divertTime": 0.25,
+        "divertDistance": 1.15,
+        "standHeight": 0.7,
+        "tag": "%QX1.6",
+        "retractedTag": "%IX4.6",
+        "extendedTag": "%IX4.7"
+      }
+    },
+    {
+      "id": "pt_78",
+      "name": "BaseSorterTurn (pusher with limits)",
+      "type": "part",
+      "packageId": "user.pusher-limits",
+      "position": [
+        -1.6135,
+        0.7,
+        1.25
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "diverted": false,
+        "divertTime": 0.25,
+        "divertDistance": 1.15,
+        "standHeight": 0.7,
+        "tag": "%QX0.3",
+        "retractedTag": "%IX5.0",
+        "extendedTag": "%IX5.1"
+      }
+    },
+    {
+      "id": "pt_79",
+      "name": "RawSorterTurn (pusher with limits)",
+      "type": "part",
+      "packageId": "user.pusher-limits",
+      "position": [
+        -1.6135,
+        0.7,
+        2.625
+      ],
+      "rotationY": -1.5708,
+      "params": {
+        "diverted": false,
+        "divertTime": 0.25,
+        "divertDistance": 1.15,
+        "standHeight": 0.7,
+        "tag": "%QX2.1",
+        "retractedTag": "%IX5.2",
+        "extendedTag": "%IX5.3"
+      }
+    },
+    {
+      "id": "pt_80",
+      "name": "RAW HOME (pusher retracted limit)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        2.595,
+        1.33,
+        3.75
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "RAW HOME",
+        "color": "green",
+        "tag": "%QX4.0"
+      }
+    },
+    {
+      "id": "pt_81",
+      "name": "RAW OUT (pusher extended limit)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        2.595,
+        1.33,
+        3.625
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "RAW OUT",
+        "color": "yellow",
+        "tag": "%QX4.1"
+      }
+    },
+    {
+      "id": "pt_82",
+      "name": "LID HOME (pusher retracted limit)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        2.595,
+        1.455,
+        3.75
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "LID HOME",
+        "color": "green",
+        "tag": "%QX4.6"
+      }
+    },
+    {
+      "id": "pt_83",
+      "name": "LID OUT (pusher extended limit)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        2.595,
+        1.455,
+        3.625
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "LID OUT",
+        "color": "yellow",
+        "tag": "%QX4.7"
+      }
+    },
+    {
+      "id": "pt_84",
+      "name": "BASE HOME (pusher retracted limit)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        2.595,
+        1.58,
+        3.75
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "BASE HOME",
+        "color": "green",
+        "tag": "%QX4.3"
+      }
+    },
+    {
+      "id": "pt_85",
+      "name": "BASE OUT (pusher extended limit)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        2.595,
+        1.58,
+        3.625
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "BASE OUT",
+        "color": "yellow",
+        "tag": "%QX4.4"
+      }
+    },
+    {
+      "id": "pt_86",
+      "name": "REJECT HOME (reject pusher retracted limit)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        2.595,
+        1.58,
+        3.375
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "REJECT HOME",
+        "color": "green",
+        "tag": "%QX5.7"
+      }
+    },
+    {
+      "id": "pt_87",
+      "name": "REJECT OUT (reject pusher extended limit)",
+      "type": "part",
+      "packageId": "user.pilot-light",
+      "position": [
+        2.595,
+        1.58,
+        3.25
+      ],
+      "rotationY": 1.5708,
+      "params": {
+        "text": "REJECT OUT",
+        "color": "yellow",
+        "tag": "%QX6.0"
+      }
+    }
+  ],
+  "units": "metric",
+  "plcs": [
+    {
+      "name": "PLC1",
+      "runsOn": "plc",
+      "protocol": "serve",
+      "connect": true
+    }
+  ]
+}

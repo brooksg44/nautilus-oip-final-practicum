@@ -1,0 +1,105 @@
+{
+  "id": "user.digital-display",
+  "name": "Digital Display",
+  "category": "Devices",
+  "geometry": {
+    "kind": "rig",
+    "joints": [],
+    "bounds": {
+      "length": 0.12,
+      "width": 0.045,
+      "top": 0.07
+    },
+    "links": [
+      {
+        "name": "body",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.12,
+            0.07,
+            0.025
+          ]
+        },
+        "offset": [
+          0,
+          0.035,
+          0.0125
+        ],
+        "color": [
+          0.1,
+          0.1,
+          0.11
+        ]
+      },
+      {
+        "name": "window",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.106,
+            0.038,
+            0.002
+          ]
+        },
+        "offset": [
+          0,
+          0.03,
+          0.026
+        ],
+        "color": [
+          0.005,
+          0.005,
+          0.005
+        ],
+        "collision": "none"
+      },
+      {
+        "name": "value",
+        "shape": {
+          "kind": "label",
+          "textFrom": "value",
+          "size": [
+            0.1,
+            0.034
+          ]
+        },
+        "offset": [
+          0,
+          0.03,
+          0.0275
+        ],
+        "color": [
+          1,
+          0.12,
+          0.08
+        ]
+      },
+      {
+        "name": "legend",
+        "shape": {
+          "kind": "label",
+          "textParam": "text",
+          "size": [
+            0.1,
+            0.012
+          ]
+        },
+        "offset": [
+          0,
+          0.0605,
+          0.0255
+        ],
+        "color": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "sdk": {
+    "level": 15,
+    "of": "v2:1485:144vhoibg02"
+  }
+}

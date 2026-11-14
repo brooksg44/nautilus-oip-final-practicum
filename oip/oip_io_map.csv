@@ -1,0 +1,86 @@
+# I/O list - Spring2026 Final Practicum Modbus
+Tag,Address,Type,Direction,Modbus point,Device
+,%QX0.0,BOOL,PLC output,coil 0,BASE (BasePLYellow).tag
+,%QX0.3,BOOL,PLC output,coil 3,BaseSorterTurn (pusher with limits).tag
+,%QX0.4,BOOL,PLC output,coil 4,-10 (DecSpdx10).lampTag
+,%QX0.5,BOOL,PLC output,coil 5,-100 (DecSpdx100).lampTag
+,%QX0.6,BOOL,PLC output,coil 6,Emitter (Emitter1).runTag
+,%QX1.0,BOOL,PLC output,coil 8,+100 (IncSpdx100).lampTag
+,%QX1.1,BOOL,PLC output,coil 9,+10 (IncSpdx10).lampTag
+,%QX1.2,BOOL,PLC output,coil 10,LAB PLC (LabPLCRunning).tag
+,%QX1.3,BOOL,PLC output,coil 11,LID (LidPLGreen).tag
+,%QX1.6,BOOL,PLC output,coil 14,LidSorterTurn (pusher with limits).tag
+,%QX1.7,BOOL,PLC output,coil 15,LOCAL (LocalControlPanel).lampTag
+,%QX2.0,BOOL,PLC output,coil 16,RAW (RawPLRed).tag
+,%QX2.1,BOOL,PLC output,coil 17,RawSorterTurn (pusher with limits).tag
+,%QX2.4,BOOL,PLC output,coil 20,RejectPusher (with limits).tag
+,%QX2.5,BOOL,PLC output,coil 21,REMOTE (RemoteControlPanel).lampTag
+,%QX3.1,BOOL,PLC output,coil 25,RESET (Reset).lampTag
+,%QX3.2,BOOL,PLC output,coil 26,SKID PLC (SkidPLCRunning).tag
+,%QX3.3,BOOL,PLC output,coil 27,START (Start).lampTag
+,%QX3.4,BOOL,PLC output,coil 28,StopBlade.tag
+,%QX3.5,BOOL,PLC output,coil 29,STOP (Stop).lampTag
+,%QX3.7,BOOL,PLC output,coil 31,AUTO (AutoPL).tag
+,%QX4.0,BOOL,PLC output,coil 32,RAW HOME (pusher retracted limit).tag
+,%QX4.1,BOOL,PLC output,coil 33,RAW OUT (pusher extended limit).tag
+,%QX4.2,BOOL,PLC output,coil 34,RAW PUSH (RawSorterTurnManPB).lampTag
+,%QX4.3,BOOL,PLC output,coil 35,BASE HOME (pusher retracted limit).tag
+,%QX4.4,BOOL,PLC output,coil 36,BASE OUT (pusher extended limit).tag
+,%QX4.5,BOOL,PLC output,coil 37,BASE PUSH (BaseSorterTurnManPB).lampTag
+,%QX4.6,BOOL,PLC output,coil 38,LID HOME (pusher retracted limit).tag
+,%QX4.7,BOOL,PLC output,coil 39,LID OUT (pusher extended limit).tag
+,%QX5.0,BOOL,PLC output,coil 40,LID PUSH (LidSorterTurnManPB).lampTag
+,%QX5.1,BOOL,PLC output,coil 41,MANUAL (Manual PL).tag
+,%QX5.2,BOOL,PLC output,coil 42,BELT (BeltConveyor(4m)ManPB).lampTag
+,%QX5.3,BOOL,PLC output,coil 43,REJECT (RejectPusherManPB).lampTag
+,%QX5.4,BOOL,PLC output,coil 44,RESET 2 (Reset2).lampTag
+,%QX5.7,BOOL,PLC output,coil 47,REJECT HOME (reject pusher retracted limit).tag
+,%QX6.0,BOOL,PLC output,coil 48,REJECT OUT (reject pusher extended limit).tag
+,%IX0.0,BOOL,PLC input,discrete input 0,AtExit (retro-reflective).tag
+,%IX0.1,BOOL,PLC input,discrete input 1,MAN/AUTO selector (Manual/Auto).rightTag
+,%IX0.2,BOOL,PLC input,discrete input 2,RejectDiffuseSensor.tag
+,%IX0.3,BOOL,PLC input,discrete input 3,-10 (DecSpdx10).tag
+,%IX0.4,BOOL,PLC input,discrete input 4,-100 (DecSpdx100).tag
+,%IX0.5,BOOL,PLC input,discrete input 5,E-STOP (EmergencyStop).tag
+,%IX0.6,BOOL,PLC input,discrete input 6,E-STOP 2 (EmergencyStop2).tag
+,%IX1.2,BOOL,PLC input,discrete input 10,+100 (IncSpdx100).tag
+,%IX1.3,BOOL,PLC input,discrete input 11,+10 (IncSpdx10).tag
+,%IX1.4,BOOL,PLC input,discrete input 12,LOCAL (LocalControlPanel).tag
+,%IX1.5,BOOL,PLC input,discrete input 13,MAN/AUTO selector (Manual/Auto).leftTag
+,%IX1.6,BOOL,PLC input,discrete input 14,RejectPusher (with limits).retractedTag
+,%IX1.7,BOOL,PLC input,discrete input 15,RejectPusher (with limits).extendedTag
+,%IX2.0,BOOL,PLC input,discrete input 16,REMOTE (RemoteControlPanel).tag
+,%IX2.1,BOOL,PLC input,discrete input 17,RESET (Reset).tag
+,%IX2.2,BOOL,PLC input,discrete input 18,START (Start).tag
+,%IX2.3,BOOL,PLC input,discrete input 19,STOP (Stop).tag
+,%IX2.4,BOOL,PLC input,discrete input 20,ClassifyDiffuseSensor.tag
+,%IX2.7,BOOL,PLC input,discrete input 23,BASE PUSH (BaseSorterTurnManPB).tag
+,%IX3.2,BOOL,PLC input,discrete input 26,LID PUSH (LidSorterTurnManPB).tag
+,%IX3.5,BOOL,PLC input,discrete input 29,RAW PUSH (RawSorterTurnManPB).tag
+,%IX3.6,BOOL,PLC input,discrete input 30,BELT (BeltConveyor(4m)ManPB).tag
+,%IX3.7,BOOL,PLC input,discrete input 31,REJECT (RejectPusherManPB).tag
+,%IX4.0,BOOL,PLC input,discrete input 32,SORT/REJECT selector (SendSort/SendReject).leftTag
+,%IX4.1,BOOL,PLC input,discrete input 33,SORT/REJECT selector (SendSort/SendReject).rightTag
+,%IX4.2,BOOL,PLC input,discrete input 34,RESET 2 (Reset2).tag
+,%IX4.3,BOOL,PLC input,discrete input 35,LidSortPositionEye (new).tag
+,%IX4.4,BOOL,PLC input,discrete input 36,BaseSortPositionEye (new).tag
+,%IX4.5,BOOL,PLC input,discrete input 37,RawSortPositionEye (new).tag
+,%IX4.6,BOOL,PLC input,discrete input 38,LidSorterTurn (pusher with limits).retractedTag
+,%IX4.7,BOOL,PLC input,discrete input 39,LidSorterTurn (pusher with limits).extendedTag
+,%IX5.0,BOOL,PLC input,discrete input 40,BaseSorterTurn (pusher with limits).retractedTag
+,%IX5.1,BOOL,PLC input,discrete input 41,BaseSorterTurn (pusher with limits).extendedTag
+,%IX5.2,BOOL,PLC input,discrete input 42,RawSorterTurn (pusher with limits).retractedTag
+,%IX5.3,BOOL,PLC input,discrete input 43,RawSorterTurn (pusher with limits).extendedTag
+,%QW0,INT,PLC output,holding register 0,BaseCounter display.tag
+,%QW2,INT,PLC output,holding register 2,BeltSpeedRef display (cm/s).tag
+,%QW3,INT,PLC output,holding register 3,LidCounter display.tag
+,%QW4,INT,PLC output,holding register 4,ProductionRate display.tag
+,%QW5,INT,PLC output,holding register 5,RawCounter display.tag
+,%QW10,INT,PLC output,holding register 10,VisualStatusIndicator (stack light).tag
+,%QD50,REAL,PLC output,holding registers 100-101,Belt Conveyor (4m) 1.speedTag
+,%QD51,REAL,PLC output,holding registers 102-103,Belt Conveyor (4m) 2.speedTag
+,%IW0,INT,PLC input,input register 0,VisionSensor1 (color code 1..9).colorTag
+,%IW1,INT,PLC input,input register 1,Remover1 (Lid).countTag
+,%IW2,INT,PLC input,input register 2,Remover2 (Base).countTag
+,%IW3,INT,PLC input,input register 3,Remover3 (Raw).countTag
+,%IW4,INT,PLC input,input register 4,Remover4 (reject).countTag

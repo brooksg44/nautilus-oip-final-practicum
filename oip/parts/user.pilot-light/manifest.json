@@ -1,0 +1,263 @@
+{
+  "id": "user.pilot-light",
+  "name": "Pilot Light",
+  "category": "Devices",
+  "geometry": {
+    "kind": "rig",
+    "joints": [],
+    "bounds": {
+      "length": 0.05,
+      "width": 0.045,
+      "top": 0.06
+    },
+    "links": [
+      {
+        "name": "body",
+        "shape": {
+          "kind": "box",
+          "size": [
+            0.05,
+            0.06,
+            0.025
+          ]
+        },
+        "offset": [
+          0,
+          0.03,
+          0.0125
+        ],
+        "color": [
+          0.02,
+          0.02,
+          0.022
+        ]
+      },
+      {
+        "name": "bezel",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.018,
+          "height": 0.006
+        },
+        "offset": [
+          0,
+          0.024,
+          0.028
+        ],
+        "rotation": [
+          1.5708,
+          0,
+          0
+        ],
+        "color": [
+          0.55,
+          0.55,
+          0.57
+        ],
+        "metalness": 0.8,
+        "roughness": 0.35,
+        "collision": "none"
+      },
+      {
+        "name": "lens_red",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.012
+        },
+        "offset": [
+          0,
+          0.024,
+          0.034
+        ],
+        "rotation": [
+          1.5708,
+          0,
+          0
+        ],
+        "showParam": "color=red",
+        "collision": "none",
+        "lamps": [
+          {
+            "name": "lens_red",
+            "emissive": [
+              1,
+              0.04,
+              0.03
+            ],
+            "offColor": [
+              0.22,
+              0.02,
+              0.02
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lens_yellow",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.012
+        },
+        "offset": [
+          0,
+          0.024,
+          0.034
+        ],
+        "rotation": [
+          1.5708,
+          0,
+          0
+        ],
+        "showParam": "color=yellow",
+        "collision": "none",
+        "lamps": [
+          {
+            "name": "lens_yellow",
+            "emissive": [
+              1,
+              0.75,
+              0
+            ],
+            "offColor": [
+              0.25,
+              0.18,
+              0
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lens_green",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.012
+        },
+        "offset": [
+          0,
+          0.024,
+          0.034
+        ],
+        "rotation": [
+          1.5708,
+          0,
+          0
+        ],
+        "showParam": "color=green",
+        "collision": "none",
+        "lamps": [
+          {
+            "name": "lens_green",
+            "emissive": [
+              0.05,
+              1,
+              0.15
+            ],
+            "offColor": [
+              0.02,
+              0.2,
+              0.04
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lens_white",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.012
+        },
+        "offset": [
+          0,
+          0.024,
+          0.034
+        ],
+        "rotation": [
+          1.5708,
+          0,
+          0
+        ],
+        "showParam": "color=white",
+        "collision": "none",
+        "lamps": [
+          {
+            "name": "lens_white",
+            "emissive": [
+              1,
+              1,
+              0.95
+            ],
+            "offColor": [
+              0.3,
+              0.3,
+              0.3
+            ]
+          }
+        ]
+      },
+      {
+        "name": "lens_blue",
+        "shape": {
+          "kind": "cylinder",
+          "radius": 0.014,
+          "height": 0.012
+        },
+        "offset": [
+          0,
+          0.024,
+          0.034
+        ],
+        "rotation": [
+          1.5708,
+          0,
+          0
+        ],
+        "showParam": "color=blue",
+        "collision": "none",
+        "lamps": [
+          {
+            "name": "lens_blue",
+            "emissive": [
+              0.1,
+              0.35,
+              1
+            ],
+            "offColor": [
+              0.02,
+              0.06,
+              0.25
+            ]
+          }
+        ]
+      },
+      {
+        "name": "legend",
+        "shape": {
+          "kind": "label",
+          "textParam": "text",
+          "size": [
+            0.048,
+            0.012
+          ]
+        },
+        "offset": [
+          0,
+          0.051,
+          0.0255
+        ],
+        "color": [
+          1,
+          1,
+          1
+        ]
+      }
+    ]
+  },
+  "sdk": {
+    "level": 15,
+    "of": "v2:2803:1gbbrz2b1qx"
+  }
+}

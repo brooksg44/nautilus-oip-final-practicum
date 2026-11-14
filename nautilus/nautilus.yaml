@@ -1,0 +1,21 @@
+name: final-practicum-oip
+server:
+  addr: "127.0.0.1:8081"
+  online-edits: true       # download/rollback from VS Code
+tasks:
+  - program: main.st
+    scan: 20ms
+    dt-tag: ScanDtS
+tag-files: [tags/io.yaml]
+tags:
+  - { name: LanguageSelect, role: setpoint, type: INT, init: 1 }
+  - { name: ActiveLanguage, role: state, type: INT, init: 0 }
+  - { name: LanguageValid, role: state, type: BOOL, init: false }
+  - { name: ScanDtS, role: state, type: REAL }
+  - { name: MainStep, role: state, type: INT, init: 1 }
+  - { name: AutoStep, role: state, type: INT, init: 16 }
+  - { name: Mode, role: state, type: INT }
+driver:
+  type: modbus
+  manifest: modbus_manifest.yaml
+  scan-rate: 20ms
