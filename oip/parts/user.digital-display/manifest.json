@@ -98,6 +98,9 @@
       }
     ]
   },
+  "origin": {
+    "shelf": "v2:1485:144vhoibg02"
+  },
   "sdk": {
     "level": 15,
     "of": "v2:1485:144vhoibg02"

@@ -1630,6 +1630,24 @@
         "color": "yellow",
         "tag": "%QX6.0"
       }
+    },
+    {
+      "id": "pt_88",
+      "type": "part",
+      "packageId": "user.selector-switch",
+      "position": [
+        0.3683434509648781,
+        0,
+        -2.512145833892842
+      ],
+      "rotationY": 0,
+      "params": {
+        "leftText": "MAN",
+        "rightText": "AUTO",
+        "right": false,
+        "leftTag": "",
+        "rightTag": ""
+      }
     }
   ],
   "units": "metric",

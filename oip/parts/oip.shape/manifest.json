@@ -1,0 +1,21 @@
+{
+  "id": "oip.shape",
+  "name": "Shape",
+  "category": "Structure",
+  "geometry": {
+    "kind": "drawn",
+    "bounds": {
+      "length": 1,
+      "width": 1,
+      "top": 1
+    }
+  },
+  "materials": [],
+  "origin": {
+    "app": "v2:8402:1udxhrynqer"
+  },
+  "sdk": {
+    "level": 15,
+    "of": "v2:8402:1udxhrynqer"
+  }
+}

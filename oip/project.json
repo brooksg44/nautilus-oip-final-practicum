@@ -6,7 +6,6 @@
     "parts/oip.belt-conveyor",
     "parts/oip.diffuse-sensor",
     "parts/oip.color-sensor",
-    "parts/oip.diverter",
     "parts/oip.despawner",
     "parts/oip.blade-stop",
     "parts/oip.shape",

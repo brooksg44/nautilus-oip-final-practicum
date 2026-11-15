@@ -215,7 +215,7 @@ size (a chain transfer sets its own lane count and length), so read the paramete
 
 ## What is in the scene now
 
-66 parts:
+67 parts:
 
 | Package / type | Count |
 |---|---|
@@ -226,8 +226,8 @@ size (a chain transfer sets its own lane count and length), so read the paramete
 | `oip.despawner` | 5 |
 | `user.digital-display` | 5 |
 | `user.pusher-limits` | 4 |
+| `user.selector-switch` | 3 |
 | `oip.shape` | 2 |
-| `user.selector-switch` | 2 |
 | `oip.blade-stop` | 1 |
 | `oip.box-spawner` | 1 |
 | `oip.color-sensor` | 1 |

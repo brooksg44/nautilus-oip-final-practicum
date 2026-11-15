@@ -220,6 +220,9 @@
       }
     ]
   },
+  "origin": {
+    "shelf": "v2:24220:1an25iuxhmt"
+  },
   "sdk": {
     "level": 15,
     "of": "v2:24220:1an25iuxhmt"

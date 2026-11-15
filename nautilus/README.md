@@ -3,9 +3,10 @@
 Nautilus controller for the Open Industry Project (OIP) conversion of the Spring 2026 Final Practicum
 scene (the `oip/` folder of this repo).
 
-The three controller implementations in `lib/` (`practicum_st.st`, `practicum_ld.ld`,
-`practicum_fbd.fbd`) are the same as in the Factory I/O version of the project. The `LanguageSelect`
-setpoint (1 ST, 2 LD, 3 FBD) picks which one runs. `main.st` adds a thin OIP adapter around them.
+`lib/` holds three implementations of the controller. `practicum_st.st` is the same as in the
+Factory I/O version of the project. `practicum_ld.ld` and `practicum_fbd.fbd` have been restructured
+for the OIP scene: they drive only the devices it has. The `LanguageSelect` setpoint (1 ST, 2 LD,
+3 FBD) picks which one runs. `main.st` adds a thin OIP adapter around them.
 
 ## Running it
 
@@ -35,7 +36,8 @@ OIP switches every output off if Nautilus stops polling for 1 s.
 Tags that OIP has no part for are `state` tags in `tags/io.yaml`. These are the sorter CW/CCW buttons,
 commands and lamps, the Turn commands, the removers, `Spare`, the three status lamps and the old
 voltage speeds.
-The controllers still write them, so the logic is unchanged and the panel lamps (`*PL`) still work.
+The ST controller still writes all of them. The LD and FBD controllers write only the ones `main.st`
+reads: the Turn commands (the manual pusher jog) and the three status lamps (the stack light).
 
 ## The `Pusher` function block (`lib/pusher.st`)
 
@@ -61,6 +63,6 @@ A rising edge on `Cycle` with the blade home extends to the extended limit, then
 ## Checks
 
 ```sh
-naut check .   # 0 errors; the warnings all come from the copied lib/ files, the same as the Factory I/O version
+naut check .   # 0 errors, 0 warnings
 naut test .    # 88 passed
 ```
